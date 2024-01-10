@@ -69,7 +69,13 @@ body {
 .progress-labels {
     display: flex;
     justify-content: space-between;
-    font-size: 2vw;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 576px) {
+    .progress-labels {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
