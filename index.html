@@ -13,6 +13,96 @@
 </head>
 <body>
 <main>
+    <div class="main-container">
+        <h1>
+            Checkout here!
+        </h1>
+        <section class="progress">
+            <div class="progress-bar">
+                <div class="progress-section active">
+                    <div class="bubble"></div>
+                </div>
+                <div class="progress-section active">
+                    <div class="line"></div>
+                    <div class="bubble"></div>
+                </div>
+                <div class="progress-section active">
+                    <div class="line"></div>
+                    <div class="bubble"></div>
+                </div>
+                <div class="progress-section">
+                    <div class="line"></div>
+                    <div class="bubble"></div>
+                </div>
+            </div>
+            <div class="progress-labels">
+                <div class="active">Cart</div>
+                <div class="active">Confirmation</div>
+                <div class="active">Payment</div>
+                <div>Finish</div>
+            </div>
+        </section>
+        <form class="form" id="form3">
+            <div class="row">
+                <div class="card-input">
+                    <label for="visa"></label>
+                    <div class="logo-container">
+                        <img src="/assets/images/png/visa.png" alt="visa">
+                        <img src="/assets/images/png/mastercard.png" alt="mastercard">
+                    </div>
+                    <div class="card-radio">
+                        <input type="radio" id="visa" name="payment_method">
+                        <div>Pay AU$20.99 with credit card</div>
+                    </div>
+                </div>
+                <div class="card-input">
+                    <label for="paypal"></label>
+                    <div class="logo-container paypal">
+                        <img src="/assets/images/png/paypal.png" alt="paypal">
+                    </div>
+                    <div class="card-radio">
+                        <input type="radio" id="paypal" name="payment_method">
+                        <div>Pay AU$20.99 with Paypal</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-1">
+                <div class="input-container">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="input-container">
+                    <label for="card_number">Card number</label>
+                    <input type="text" id="card_number">
+                </div>
+            </div>
+            <div class="row m-1">
+                <div class="row">
+                    <div class="row">
+                        <div class="input-container">
+                            <label for="valid_date">Valid date</label>
+                            <input type="date" id="valid_date">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="cvv_cvc">CVV / CVC *</label>
+                            <input type="number" id="cvv_cvc" pattern="[0-9]{3,4}" min="0000" max="9999">
+                        </div>
+
+                    </div>
+                    <div class="foot-note">
+                        * CVV or CVC is the card security code, unique three digits number on the back of your card
+                        separate from its number.
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="form-controls row">
+        <button type="button">Back</button>
+        <button type="submit" form="form3" class="active">Next Step</button>
+    </div>
 </main>
 </body>
 </html>
