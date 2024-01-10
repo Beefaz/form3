@@ -153,7 +153,8 @@ main {
 }
 
 .card-radio {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
     gap: 5px;
     line-height: 1.3;
 }
@@ -190,7 +191,7 @@ input {
 
 .foot-note {
     color: rgba(170, 170, 170, 1);
-    font-size: 10px;
+    font-size: 12px;
     display: flex;
     align-items: center;
     font-weight: 600;
